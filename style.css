@@ -1,0 +1,790 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+
+}
+
+/* -------------------Import Google Font------------- */
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Stalinist+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,600;1,400&family=Kanit&family=Poppins&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Luckiest+Guy&family=Stalinist+One&display=swap');
+
+
+
+
+
+/* -------------------import font awesome icon------------ */
+
+/* -------------Global Class----------- */
+
+:root{
+
+    /*      Theme colors        */
+    
+
+    /* gradient color   */
+    --sky: linear-gradient(120deg, #eb4808 0%, #e21340 100%);
+
+    /*      theme font-family   */
+    --h1_font_family: 'Luckiest Guy', cursive;
+    --para :'Luckiest Guy', cursive;
+    --button: 'Josefin Sans', sans-serif;
+    --nav: 'Kanit', sans-serif;
+   
+}
+
+a{
+    text-decoration: none;
+
+}
+li {
+    list-style: none;
+}
+
+/* ---------------- Global Classes ---------------*/
+
+a{
+    text-decoration: none;
+    color: gray;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;    
+    flex-wrap: wrap;
+}
+
+.btn{
+    width: 7rem;
+    border-radius: 5px;
+    border: none;
+    margin-top: 0.7rem;
+    height: 2.5rem;
+    font-size: bold;
+    font-size: 0.9rem;
+    letter-spacing: 0.1rem;
+    background:linear-gradient(45deg,#87adfe,#ff77cd);
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.4s linear;
+    font-family: var(--button);
+    box-shadow:0 20px 20px rgba(0, 0, 0, 0.2);
+}
+.btn:hover,.s-btn:hover{
+    background:linear-gradient(45deg,#ff77cd,#87adfe);
+}
+
+
+
+
+.container{
+    margin: 0 5vw;
+}
+
+
+/* ------x------- Global Classes -------x-------*/
+/* -------------Global Class End------------ */
+
+/* ----------------------NAVBAR------------------- */
+
+
+/* ------------------Nav Logo Style ------------ */
+.text-gray{
+    color:#ff77cd;
+}
+/* ------------------Nav Logo Style End ------------ */
+
+
+.nav{
+    background: rgb(248, 242, 242);
+    position: sticky;
+    top: 0%;
+    padding: 0 2rem;
+    height: 0rem;
+    min-height: 4.4rem;
+    overflow: hidden;
+    transition: all 1s ease-in-out;
+    z-index: 3;
+}
+
+.nav .nav-menu{    
+    justify-content: space-between;
+}
+
+
+
+
+
+.collapes{
+    height: 30rem !important;
+}
+
+.nav .nav-items{
+    display: flex;
+    margin: 0;
+    align-items: center;
+}
+
+.nav .nav-items .nav-link{
+    padding: 1.6rem 1rem;
+    font-size: 1.1rem;
+    position: relative;
+    font-family: var(--nav);
+    font-size: 1.1rem;
+}
+
+
+
+.nav .nav-items .nav-link:hover a{
+    color: #ff77cd;
+}
+
+.nav .nav-brand a{
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    display: block;
+    font-family: var(--Lexend);
+    font-size: 1.6rem;
+    
+}
+
+
+/* ---------------End Navbar------------ */
+
+
+
+
+
+/* --------------------Hamburger Menu----------------- */
+
+.my-fas{
+    cursor: pointer;
+    position: absolute;
+    top: 1.5rem;
+    right: 2.8rem;
+    display: none !important;
+}
+
+
+
+.line1, .line2, .line3{
+    width: 30px;
+    height: 3px;
+    margin-bottom: 4px;
+    background-color: #000;
+    transition: all 0.3s ease;
+}
+
+
+#mid-line{
+    width: 23px;
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-4px,6px);
+}
+
+
+.toggle .line2{
+    opacity: 0;
+}
+
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+/* --------------------Hamburger Menu End----------------- */
+
+
+
+/* ----------------Download Section ---------------- */
+.search{
+   height: 39rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    padding-top: 8rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.tag-line{
+    margin: 0.7rem 0rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    font-family: var(--para);
+    line-height: 2rem;
+    color: #000;
+
+}
+
+.h-primary{
+    font-size: 2.9rem;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-family: 'Luckiest Guy', cursive;
+    color: #b60475;
+}
+
+
+
+
+/* -----------------------Search Feild-------------- */
+.buttonIn { 
+    width: 500px; 
+    position: relative; 
+} 
+
+#input-insta-link { 
+    margin: 0px; 
+    padding: 10px; 
+    width: 100%; 
+    outline: none; 
+    height:49px;
+    /* border-radius: 5px;  */
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    border: 3px dotted #ff77cd ;
+    font-family: 'Concert One', cursive;
+    transition: all 0.4s ease-in;
+} 
+
+.s-btn { 
+    position: absolute;
+    top: 2px;
+    overflow: hidden;
+    right: 4px;
+    z-index: 2; 
+    border: none; 
+    height: 45px; 
+    width: 5rem;
+    transform: translateX(2px); 
+    font-family: var(--button);
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+    background:linear-gradient(45deg,#87adfe,#ff77cd);
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.4s linear;
+} 
+
+#input-insta-link:focus{
+    box-shadow:5px 5px 3px rgba(219, 63, 240, 0.623),-5px -5px 3px rgba(219, 63, 240, 0.623);
+}
+/* -----------------------Search Feild End-------------- */
+
+
+
+
+/* ---------------------------Add Background image on Home Section-------------- */
+
+.search::before{
+    content: "";
+    background:  url(./image/bg.jpg)no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.66;
+}
+
+/* ---------------------Add Background Color------------------- */
+.search::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    /* background:rgba(231, 7, 194, 1); */
+    z-index: -3;
+}
+
+
+/* ---------------------------Add Background image on Home Section End-------------- */
+
+
+/* -------------------------Add SVG Style----------------------- */
+
+.mysvg-class{
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    left: 0;
+}
+/* -------------------------Add SVG Style End----------------------- */
+
+/* ----------------Download Section  End---------------- */
+
+
+
+/* --------------------------Loading Annimation-------------- */
+.circle {
+    border: 10px solid #87adfe;
+    display: inline-block;
+    border-radius: 50%;
+    border-top: 10px solid  #ff77cd;       
+    width: 50px;
+    height: 50px;
+    -webkit-animation: spin 0.80s linear infinite;
+    /* Safari */
+    animation: spin 0.80s linear infinite;
+
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.container{
+    margin-top: 0.4rem;
+}
+
+.hidden{
+    display: none;
+}
+
+
+#loading-annimation-div p{
+ color:#fff ;
+ font-family: 'Stalinist One', cursive;
+}
+
+
+/* --------------------------Loading Annimation End-------------- */
+
+
+/* --------------------Show iamge--------------- */
+.showimage{
+    width: 80%;
+    margin: 0rem auto;
+    box-shadow:0 20px 20px rgba(0, 0, 0, 0.2),0px 0px 50px rgba(0, 0, 0, 0.2)  ;
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 9px;
+}
+.image-box img{
+    width: 200px;
+    border: 3px dotted #ff77cd;
+    border-radius: 10px;
+    box-shadow:0 20px 20px rgba(0, 0, 0, 0.2),0px 0px 50px rgba(0, 0, 0, 0.2);
+}
+.download-btn-box{
+    flex-direction: column;
+}
+/* --------------------Show iamge End------------------- */
+
+
+
+/* <!-------------------------- How To Section --------------------> */
+
+.how-to{
+    width: 80%;
+    margin: 1rem auto;
+    /* border: 1px solid red ; */
+    /* height: 20rem; */
+    padding: 0.5rem 0.9rem;
+
+}
+
+.how-to-download-image-guide img{
+    width: 250px;
+}
+
+.step-para{
+    color: var(--para);
+    font-size: 1.5rem;
+    font-family: 'Reggae One', cursive;
+}
+
+.how-to-download-image-guide{
+    margin-left: 1.3rem;
+    
+    padding: 1rem;
+}
+.how-to-download-image-guide img{
+    border: 2px solid #ff77cd ;
+    border-radius: 9px;
+}
+
+/* <!------------------------- How To Section End--------------------- --> */
+
+
+/* -----------------------------Go To Top icon --------------------- */
+.go-to-top-icon{
+    width: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+}
+.go-to-top-icon span{
+    transition: all 0.4s linear;
+    cursor: pointer;
+}
+
+.go-to-top-icon span:hover{
+    background-color: #87adfe;
+    border-radius: 20rem;
+}
+
+.my-arrow-top-icon{
+    display: none;
+}
+
+/* -----------------------------Go To Top icon End--------------------- */
+
+
+
+/* ----------------------Style Disclamer Section--------------- */
+.disclamer{   
+    width: 80%;
+    margin: 1.5rem auto;
+    margin-bottom: 0rem;
+    box-shadow:0 20px 20px rgba(0, 0, 0, 0.2),0px 0px 50px rgba(0, 0, 0, 0.2)  ;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    border-radius: 9px;
+    padding: 1.5rem;
+}
+
+.disclamer p{
+    text-align: center;
+    color: gray;
+}
+/* ----------------------Style Disclamer Section End--------------- */
+
+
+
+
+/* ---------------------Footer Section----------------- */
+
+.footer-section{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    background-color: #000;
+    color: #fff;
+    align-items: center;
+}
+.footer-nav-item{
+    margin-bottom: 0.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 15rem;
+}
+.footer-nav-links{
+    color: rgba(124, 119, 119, 0.897);
+}
+.footer-nav-links:hover, .copyright-text a:hover{
+    color: #fff;
+}
+.footer-nav-item li{
+    margin: 0 0.4rem;
+    padding: 0.6rem 0rem;
+}
+.footer-section{
+    padding: 1.5rem 0rem;
+}
+.copyright-text{
+    color: rgba(124, 119, 119, 0.897);
+    letter-spacing: 0.1rem;
+    text-align: center;
+}
+.copyright-text a{
+    color: rgba(124, 119, 119, 0.897);
+
+}
+   
+
+/* ---------------------Footer Section End----------------- */
+
+
+/* ------------------------Add Style Font Awesome icon-------------- */
+.mr-right{
+    margin-right: 0.3rem;
+}
+
+
+/* ----------------Add Media Quarey---------- */
+@media only screen and (max-width: 750px){
+    .nav .nav-menu, .nav .nav-items{
+        flex-direction: column;
+    }
+    .nav{
+        min-height: 4rem;
+    }
+    .nav .my-fas{
+        display: initial !important;
+    }
+    .nav .nav-brand{
+        width: 100px;
+    }
+
+
+
+
+    .tag-line{
+        margin: 0.7rem 0rem;
+        font-size: 1rem;
+        font-weight: 500;
+        letter-spacing: 0.1rem;
+        font-family: var(--para);
+        line-height: 1.6rem;
+        color: #000;
+    }
+    
+    .h-primary{
+        font-size: 2rem;
+        letter-spacing: 2px;
+        font-weight: 400;
+        font-family:  var(--h1_font_family);
+    }
+
+
+    /* -----------------------Search Feild-------------- */
+.buttonIn { 
+    width: 300px; 
+    position: relative; 
+} 
+
+
+/* -----------------------------Go To Top---------------------------- */
+.go-to-top-icon span{
+    font-size: 12px;
+    position: fixed;
+    bottom: 1rem;
+    right: 0.5rem;
+}
+/* -----------------------------Go To Top End---------------------------- */
+
+
+
+    .disclamer{
+        /* border: 2px solid lightcoral; */
+       
+        width: 80%;
+        margin: 2rem auto;
+        margin-bottom: 0rem;
+        box-shadow:0 20px 20px rgba(0, 0, 0, 0.2),0px 0px 50px rgba(0, 0, 0, 0.2)  ;
+        height: 10rem;
+        display: flex;
+        justify-content: center;
+        border-radius: 9px;
+        padding: 1.5rem;
+    }
+
+  
+
+}
+/* ----------------Add Media Quarey End---------- */
+
+
+
+/* --------------------This Media for Disclamer-------------- */
+@media only screen and (max-width: 785px){
+    .disclamer{
+      
+       
+        width: 80%;
+        margin: 2rem auto;
+        margin-bottom: 0rem;
+        box-shadow:0 20px 20px rgba(0, 0, 0, 0.2),0px 0px 50px rgba(0, 0, 0, 0.2)  ;
+        height: 8rem;
+        display: flex;
+        justify-content: center;
+        border-radius: 9px;
+        padding: 0.6rem;
+    }
+}
+
+
+
+
+/* ------------------------Add Small Size Media Quarey------------- */
+@media only screen and (max-width: 406px){
+
+
+    /* ----------------------Nav Bar Style-------------------- */
+    .nav{
+    background: rgb(248, 242, 242);
+    position: sticky;
+    min-height: 3rem;
+        }
+
+        /* --------------------Hamburger menu---------------- */
+        .my-fas{
+            cursor: pointer;
+            position: absolute;
+            top: 1rem;
+            right: 2rem;
+            display: none !important;
+        }
+        /* --------------------Hamburger menu End---------------- */
+    /* ----------------------Nav Bar Style End-------------------- */
+
+
+
+    /* -----------------Logo Style----------------- */
+    .nav .nav-brand a{
+        font-size: 1.6rem;
+        padding: 1rem 0px;
+        display: block;
+        font-family: var(--Lexend);
+        font-size: 1rem;
+        
+    }
+    /* -----------------Logo Style End----------------- */
+
+    .h-primary{
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+        font-weight: 400;
+        font-family:  var(--h1_font_family);
+      
+    }
+    
+    .tag-line{
+        margin: 0.7rem 0rem;
+        font-size: 0.9rem;
+        font-weight: 500;
+        letter-spacing: 0.1rem;
+        font-family: var(--para);
+        line-height: 1.6rem;
+        color: #000;
+    }
+
+        /* -----------------------Search Feild-------------- */
+.buttonIn { 
+    width: 200px; 
+    position: relative; 
+} 
+
+#input-insta-link { 
+    margin: 0px; 
+    padding: 5px; 
+    width: 100%; 
+    outline: none; 
+    height:40px;
+    border-radius: 5px; 
+    font-size: 0.7rem;
+    border: 2px dotted #ff77cd ;
+    position: relative;
+    /* background-color:transparent ; */
+
+    /* border-radius: 15px; */
+} 
+
+
+
+
+.s-btn { 
+    position: absolute;
+    top: 2px;
+    overflow: hidden;
+    right: 4px;
+    z-index: 2; 
+    border: none; 
+    height: 36px; 
+    width: 3rem;
+    transform: translateX(2px); 
+    border-radius: 5px;
+    font-family: var(--button);
+    font-size: 0.9rem;
+    color: #fff;
+} 
+
+
+
+
+
+
+    /* --------------------Show iamge--------------- */
+.showimage{
+    /* border: 2px solid lightcoral; */
+    width: 80%;
+    height: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.image-box img{
+    width: 125px;
+    border: 3px dotted #ff77cd;
+    border-radius: 10px;
+    box-shadow: none;
+}
+.download-btn-box{
+    flex-direction: column;
+    margin-top: 0;
+}
+/* --------------------Show iamge End------------------- */
+
+
+/* ----------------------Style Disclamer Section--------------- */
+.disclamer{
+    /* border: 2px solid lightcoral; */
+   
+    width: 80%;
+    margin: 1.5rem auto;
+    margin-bottom: 0rem;
+    height: 10.7rem;
+    display: flex;
+    justify-content: center;
+    border-radius: 9px;
+    padding: 0.5rem;
+}
+
+.disclamer p{
+    text-align: center;
+    color: gray;
+    font-size: 0.9rem;
+}
+/* ----------------------Style Disclamer Section End--------------- */
+
+
+}
+/* ------------------------Add Small Size Media Quarey End------------- */
+
