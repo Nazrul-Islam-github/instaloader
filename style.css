@@ -35,10 +35,10 @@
     --sky: linear-gradient(120deg, #eb4808 0%, #e21340 100%);
 
     /*      theme font-family   */
-    --h1_font_family: 'Luckiest Guy', cursive;
-    --para :'Luckiest Guy', cursive;
+    --h1_font_family: 'Poppins', sans-serif;
+    --para :'Poppins', sans-serif;
     --button: 'Josefin Sans', sans-serif;
-    --nav: 'Kanit', sans-serif;
+    --nav: ''Poppins', sans-serif;
    
 }
 
